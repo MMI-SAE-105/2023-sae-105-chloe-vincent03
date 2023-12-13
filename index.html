@@ -27,6 +27,91 @@
         <img src="/public/img/accueil/accueil-3.webp" alt="Image de Shigeru Ban">
         <h2>Shigeru Ban</h2>        
     </section>
+    <section>
+        <article>
+            <h3>Venez découvrir ces œuvres </h3>
+            <div  x-data="{
+                hrefCourant: '#ecran-1',
+            }">
+                <button  aria-label="slide précedant"
+                @click="$refs.parent.scrollLeft -= $refs.parent.offsetWidth"
+                >
+                    &lt;
+                </button>
+                <button  aria-label="slide suivant"
+                    @click="$refs.parent.scrollLeft += $refs.parent.offsetWidth"
+                >   
+                    ></button>
+                <div  x-ref="parent"
+                @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                                [...$refs.parent.children]
+                                .find(e=>e.getBoundingClientRect(). x>= 0)
+                                .id
+                                                "
+                >
+                    <div  >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres5.webp" alt="maison">
+                            <figcaption>Crescent House</figcaption>
+                        </figure>
+                    </div>
+                    <div  >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres4.webp" alt="centre Ponpidou Metz">
+                            <figcaption> Centre Ponpidou Metz</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres1.webp" alt="Cardboard Cathedral">
+                            <figcaption>Cardboard Cathedral</figcaption>
+                        </figure>
+                    </div>
+                    <div >
+                        <figure>
+                            <img src="public/img/Oeuvres/oeuvres7.webp" alt="Khumjung secondary school ">
+                            <figcaption>Khumjung secondary school </figcaption>
+                        </figure>
+                    </div>
+                    <div >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres8.webp" alt="Shonai hotel Suiden terrasse spa">
+                            <figcaption>Shonai hotel Suiden terrasse spa</figcaption>
+                        </figure>
+                    </div>
+                    <div >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres6.webp" alt="ZEN Wellness SEINEI">
+                            <figcaption>ZEN Wellness SEINEI</figcaption>
+                        </figure>
+                    </div>
+                    <div >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres2.webp" alt="Temporary housing in Marrakesh">
+                            <figcaption>Temporary housing in Marrakesh</figcaption>
+                        </figure>
+                    </div>
+                    <div >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres3.webp" alt="Simose">
+                            <figcaption>Simose</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <p> Un petit avant goût de ces créations</p>
+        </article>
+        <article>
+            <h3>Vous voulez en savoir plus sur comment cet arcitecte révolutionne le monde ? </h3>
+            <p>L’exposition est ouverte tout le jours du 13 Avril au 23 Juin 2024</p>
+            <button>
+                <h3>Billetterie</h3>
+            </button>
+        </article>
+    </section>
     
 </body>
 </html>
