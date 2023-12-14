@@ -52,19 +52,19 @@
             <article>
                 <p> Un petit avant goût de ces créations</p>
             </article>
-            <div  x-data="{
+            <div class="carrousel"  x-data="{
                 hrefCourant: '#ecran-1',
             }">
-                <button  aria-label="slide précedant"
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
                 @click="$refs.parent.scrollLeft -= $refs.parent.offsetWidth"
                 >
                     &lt;
                 </button>
-                <button  aria-label="slide suivant"
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
                     @click="$refs.parent.scrollLeft += $refs.parent.offsetWidth"
                 >   
                     ></button>
-                <div  x-ref="parent"
+                <div class="carrousel_parent-ecrans" x-ref="parent"
                 @scroll.debounce.250ms.passive="
                 hrefCourant = '#'+
                                 [...$refs.parent.children]
@@ -72,49 +72,49 @@
                                 .id
                                                 "
                 >
-                    <div  >
+                    <div class="carrousel_ecran" >
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres5.webp" alt="maison">
                             <figcaption>Crescent House</figcaption>
                         </figure>
                     </div>
-                    <div  >
+                    <div class="carrousel_ecran" >
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres4.webp" alt="centre Ponpidou Metz">
                             <figcaption> Centre Ponpidou Metz</figcaption>
                         </figure>
                     </div>
-                    <div>
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres1.webp" alt="Cardboard Cathedral">
                             <figcaption>Cardboard Cathedral</figcaption>
                         </figure>
                     </div>
-                    <div >
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="public/img/Oeuvres/oeuvres7.webp" alt="Khumjung secondary school ">
                             <figcaption>Khumjung secondary school </figcaption>
                         </figure>
                     </div>
-                    <div >
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres8.webp" alt="Shonai hotel Suiden terrasse spa">
                             <figcaption>Shonai hotel Suiden terrasse spa</figcaption>
                         </figure>
                     </div>
-                    <div >
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres6.webp" alt="ZEN Wellness SEINEI">
                             <figcaption>ZEN Wellness SEINEI</figcaption>
                         </figure>
                     </div>
-                    <div >
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres2.webp" alt="Temporary housing in Marrakesh">
                             <figcaption>Temporary housing in Marrakesh</figcaption>
                         </figure>
                     </div>
-                    <div >
+                    <div class="carrousel_ecran">
                         <figure>
                             <img src="/public/img/Oeuvres/oeuvres3.webp" alt="Simose">
                             <figcaption>Simose</figcaption>
