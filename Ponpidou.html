@@ -7,51 +7,58 @@
     <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/index.html">
-            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban">
+            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban" class="header-logo">
         </a>
-        <button>
-            <span></span>
-          </button>
-          <ul >
-            <li><a href="/infos.html" >Infos</a></li>
-            <li><a href="/billetterie.html" >Billetterie</a></li>
-            <li><a href="/shigeru-Ban.html" >Shigeru Ban</a></li>
-            <li><a href="/Oeuvres.html" >Oeuvres</a></li>
-          </ul>
+        <div class="dropdown"> 
+            <button class="dropbtn">
+                <img src="/public/icon/menu-blanc.svg" alt="Menu">
+            </button>
+            <nav class="dropdown-content">
+                <ul class="menu">
+                    <li><a href="/infos.html" class="menu_texte">Infos</a></li>
+                    <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
+                    <li><a href="/shigeru-Ban.html" class="menu_texte" >Shigeru Ban</a></li>
+                    <li><a href="/Oeuvres.html" class="menu_texte">Oeuvres</a></li>
+                </ul>
+                <a href="#menu">
+                    <img src="/public/icon/croix-menu-marron.svg" alt="croix-menu-marron" class="close">
+                </a>
+            </nav>
+        </div>
     </header>
 <main>
-    <section>
-        <h2>Centre Ponpidou Metz</h2>
+    <section class="section">
+        <h2 class="Batiment__Titre"> <strong>Centre Ponpidou Metz</strong></h2>
         <article>
-            <img src="/public/img/Ponpidou/ponpidou1.webp" alt="Vue extérieur du  centre Ponpidou">
-            <p>Vue extérieur du  centre Ponpidou</p>
-            <p>Cette annexe du Centre Pompidou à Paris a été construite à Metz comme un complexe comprenant un musée d'art et un théâtre. </p>
+            <img class="Batiment__img"  class="Batiment__img" src="/public/img/Ponpidou/ponpidou1.webp" alt="Vue extérieur du  centre Ponpidou">
+            <p class="légende">Vue extérieur du  centre Ponpidou</p>
+            <p class="Batiment_texte">Cette annexe du Centre Pompidou à Paris a été construite à Metz comme un complexe comprenant un musée d'art et un théâtre. </p>
         </article>
         <article>
-            <img src="/public/img/Ponpidou/ponpidou3.webp" alt="Vue extérieur du  toit du centre Ponpidou">
-            <p>Vue extérieur du  toit du centre Ponpidou</p>
-            <p>En plaçant un grand toit dans le parc et en ouvrant la façade à volets en verre sur tout le périmètre, une transition continue de l'espace intérieur et extérieur est créée. </p>
+            <img class="Batiment__img" src="/public/img/Ponpidou/ponpidou3.webp" alt="Vue extérieur du  toit du centre Ponpidou">
+            <p class="légende">Vue extérieur du  toit du centre Ponpidou</p>
+            <p  class="Batiment_texte">En plaçant un grand toit dans le parc et en ouvrant la façade à volets en verre sur tout le périmètre, une transition continue de l'espace intérieur et extérieur est créée. </p>
         </article>
         <article>
-            <img src="/public/img/Ponpidou/ponpidou2.webp" alt="Vue extérieur du  centre Ponpidou de nuit">
-            <p>Vue extérieur du  centre Ponpidou de nuit</p>
+            <img class="Batiment__img" src="/public/img/Ponpidou/ponpidou2.webp" alt="Vue extérieur du  centre Ponpidou de nuit">
+            <p class="légende">Vue extérieur du  centre Ponpidou de nuit</p>
         </article>
-        <h3>Une fabrication hors norme </h3>
+        <h3 class="Batiment__intertitre">Une fabrication hors norme </h3>
         <article>
-            <p>Le toit est fabriqué à partir de bois lamellé selon un motif tissé hexagonal composé sous la forme d'un chapeau chinois tissé en bambou. Ce grand toit en bois est recouvert d'une membrane en fibre de verre enduite de téflon et permet à une douce lumière naturelle de filtrer à l'intérieur.</p>
-            <img src="/public/img/Ponpidou/ponpidou4.webp" alt="Vue intérieur du  centre Ponpidou">
-            <p>Vue intérieur du  centre Ponpidou</p>
+            <p class="Batiment_texte">Le toit est fabriqué à partir de bois lamellé selon un motif tissé hexagonal composé sous la forme d'un chapeau chinois tissé en bambou. Ce grand toit en bois est recouvert d'une membrane en fibre de verre enduite de téflon et permet à une douce lumière naturelle de filtrer à l'intérieur.</p>
+            <img class="Batiment__img" src="/public/img/Ponpidou/ponpidou4.webp" alt="Vue intérieur du  centre Ponpidou">
+            <p class="légende">Vue intérieur du  centre Ponpidou</p>
         </article>
         <article>
-            <p> Les galeries principales sont une série de tubes rectilignes en porte-à-faux de 90 mx 15 m qui flottent au-dessus du sol, et leurs extrémités vitrées pointent en direction de la cathédrale et d'autres monuments de la ville.</p>
-            <img src="/public/img/Ponpidou/ponpidou5.webp" alt="Vue sur la cathédral de Metz depuis le musée">
-            <p>Vue sur la cathédral de Metz depuis le musée</p>
+            <p class="Batiment_texte"> Les galeries principales sont une série de tubes rectilignes en porte-à-faux de 90 mx 15 m qui flottent au-dessus du sol, et leurs extrémités vitrées pointent en direction de la cathédrale et d'autres monuments de la ville.</p>
+            <img class="Batiment__img" src="/public/img/Ponpidou/ponpidou5.webp" alt="Vue sur la cathédral de Metz depuis le musée">
+            <p class="légende">Vue sur la cathédral de Metz depuis le musée</p>
         </article>
     </section> 
-    <section>
-        <h3>Retour vers les Oeuvres </h3>
+    <section class="section__marrons">
+        <h3 class="Batiment__retour">Retour vers les Oeuvres </h3>
     </section> 
 </main> 
 <footer class="footer">

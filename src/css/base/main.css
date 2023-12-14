@@ -40,3 +40,12 @@ p{
 strong{
     font-weight:400 ;
 }
+
+.légende{
+    color: var(--marrons);
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    font-variant: small-caps;
+    text-align: center;
+    margin-top: 1px;
+}
