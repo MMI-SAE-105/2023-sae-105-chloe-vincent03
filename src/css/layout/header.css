@@ -50,4 +50,9 @@
     right: 60px;
 }
   
+.header-logo{
+    width: 27px;
+    height: 126px;
+    flex-shrink: 0;  
+}
  
