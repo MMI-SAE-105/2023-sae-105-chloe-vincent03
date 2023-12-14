@@ -66,38 +66,42 @@
         <a href="/simose.html">Simose</a>
     </article>
     <section x-data="{
-        imageUrl:'https://picsum.photos/id/56/400/300'
+        imageUrl:'/public/img/Oeuvres/galerie/mini/historical-museum-mini.jpg'
     }" >
         <h2 >Galerie</h2>
     <p >Les plus belle œuvres de Shigeru Ban qui ont été réalisé pour des concours. </p>
     <img 
     class="img"
-    src="/public/img/Oeuvres/galerie/mini/historical-museum-mini.jpg" alt="pont"
-            @click="imageUrl= 'https://picsum.photos/id/56/400/300'"
+    src="/public/img/Oeuvres/galerie/mini/historical-museum-mini.jpg" alt="historical-museum"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/historical-museum-max.jpg'"
             >
     <img 
     class="img"
-    src="/img/miniature/NEIGE-mini.jpg" alt="gare"
-            @click="imageUrl= 'img/gformat/neige_max.jpg'">
+    src="/public/img/Oeuvres/galerie/mini/toyama-mini.jpg" alt="Toyama"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/toyama-max.jpg'">
     <img 
     class="img"
-    src="/img/miniature/coucher-de-soleil-mini.jpg" alt="gare"
-            @click="imageUrl= 'img/gformat/coucher-de-soleil.jpg'">
+    src="/public/img/Oeuvres/galerie/mini/théatre-mini.jpg" alt="théatre"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/théatre-max.jpg'">
     <img
     class="img"
-    src="/img/miniature/FORET-mini.jpg" alt="gare"
-            @click="imageUrl= 'img/gformat/foret-maxi.jpg'">
+    src="/public/img/Oeuvres/galerie/mini/funeraire-mini.jpg" alt="funeraire"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/funeraire-max.jpg'">
     <img
     class="img"
-    src="/img/miniature/montagne-miniature.jpg" alt="gare"
-            @click="imageUrl= 'img/gformat/montagne-maxi.jpg'">
+    src="/public/img/Oeuvres/galerie/mini/palais-mini.jpg" alt="palais"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/palais-max.jpg'">
+    <img 
+    class="img"
+    src="/public/img/Oeuvres/galerie/mini/airport-mini.jpg" alt="airport"
+            @click="imageUrl= 'public/img/Oeuvres/galerie/max/airport-max.jpg'">
     
     <div class="overlay"
         x-show="imageUrl"
         @click="imageUrl=null"
         @keyup.escape.window="imageUrl = null">
         <figure>
-            <img :src="imageUrl" alt="image 237... un chiot"></figure>
+            <img :src="imageUrl" alt="historical-museum"></figure>
     </div>
 
     </section>
