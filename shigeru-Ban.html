@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban">
+    <header class="header">
+        <a href="/index.html">
+            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban" class="header-logo">
         </a>
-        <button>
-            <span></span>
-          </button>
-          <ul >
-            <li><a href="/infos.html" >Infos</a></li>
-            <li><a href="/billetterie.html" >Billetterie</a></li>
-            <li><a href="/shigeru-Ban.html" >Shigeru Ban</a></li>
-            <li><a href="/Oeuvres.html" >Oeuvres</a></li>
-          </ul>
+        <div class="dropdown"> 
+            <button class="dropbtn">
+                <img src="/public/icon/menu-blanc.svg" alt="Menu">
+            </button>
+            <nav class="dropdown-content">
+                <ul class="menu">
+                    <li><a href="/infos.html" class="menu_texte">Infos</a></li>
+                    <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
+                    <li><a href="/shigeru-Ban.html" class="menu_texte" >Shigeru Ban</a></li>
+                    <li><a href="/Oeuvres.html" class="menu_texte">Oeuvres</a></li>
+                </ul>
+                <a href="#menu">
+                    <img src="/public/icon/croix-menu-marron.svg" alt="croix-menu-marron" class="close">
+                </a>
+            </nav>
     </header>
 <main>
     <section class="section">
