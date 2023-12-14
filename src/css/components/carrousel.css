@@ -44,3 +44,43 @@
     color: white;
 }
 
+.nom-carrousel{
+    color: var(--blanc);
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: var(--intertitre);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    font-variant: small-caps;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    
+}
+
+.intertitre-carrousel{
+    color: var(--marrons);
+    font-family: Times New Roman;
+    font-size: var(--titre-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    font-variant: small-caps;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: var(--marron);
+    
+}
+
+
+figure {
+    background-color: rgba(177, 133, 68, 1);
+    padding-bottom: 10px;
+}
+
+.texte-carrousel{
+    color: var(--marron);
+    text-align: center;
+    font-size: var(--texte);
+}
