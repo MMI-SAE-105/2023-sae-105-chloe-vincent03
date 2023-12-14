@@ -1,0 +1,29 @@
+.galerie {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--marrons);
+    padding: 16px;
+}
+
+.galerie__titre{
+    color: var(--blanc);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.galerie__texte{
+    color: var(--blanc);
+    text-align: center;
+    padding: 10px;
+    
+}
+
+
+.img {
+    margin: 10px; 
+    width: 150px;
+    height: 105px;
+    border: 2px solid white;
+    border-radius: 10
+}
