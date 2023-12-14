@@ -26,3 +26,12 @@
 .menu li {
     margin: 52px 0; /* Ajoute une marge en haut et en bas de chaque élément de liste */
 }
+
+.logo_menu{
+    width: 46px;
+    height: 55px;
+    flex-shrink: 0;
+    position: relative;
+    top: 10px;
+    left: 10px;  
+}
