@@ -1,0 +1,24 @@
+.Ban__Titre{
+    color: var(--marrons);
+    margin-bottom: 10px;
+}
+.Ban__intertitre{
+    color: var(--marrons);
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    font-variant: small-caps;
+    margin-top: 10px;
+}
+
+.Ban__img{
+    width: 198px;
+    height: 264px;
+    flex-shrink: 0;
+}
+
+.légende{
+    color: var(--marrons);
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    font-variant: small-caps;
+}
