@@ -1,11 +1,10 @@
 body{
-    padding: 16px;
 }
 
 h1{
     font-family: 'Times New Roman', Times, serif;
     font-size: var(--titre);
-    color: var(--marrons);
+    color: var(--blanc);
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
