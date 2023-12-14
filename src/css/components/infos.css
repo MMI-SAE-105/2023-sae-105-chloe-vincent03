@@ -1,0 +1,46 @@
+#onglets > div {
+    position: relative;
+    height: 350px; /* Adjust as needed */
+    width: 350px; /* Adjust as needed */
+  }
+  [role=tabpanel]  {
+    position: absolute;
+    opacity: 0;
+  }
+  .actif {
+    opacity: 1;
+    transition: 2s;
+  }
+  li[role=tab] {
+    display: inline-block;
+    padding: 6px;
+    background-color: var(--blanc);
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--marrons);
+    width: 77px;
+    height: 29px; 
+    text-align: center; 
+
+  }
+.infos__intertitre{
+    color: var(--blanc, #FFF);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.infos__titre{
+    color: var(--blanc, #FFF);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.infos__texte{
+    color: var(--blanc);
+    margin-bottom: 30px;
+    line-height: 1.3;
+    
+}
