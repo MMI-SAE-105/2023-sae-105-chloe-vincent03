@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'art de Shigeru Ban</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <header>
@@ -64,6 +65,42 @@
         <a href="/simose.html"><img src="/public/img/Oeuvres/oeuvres3.webp" alt="Simose"></a>
         <a href="/simose.html">Simose</a>
     </article>
+    <section x-data="{
+        imageUrl:'https://picsum.photos/id/56/400/300'
+    }" >
+        <h2 >Galerie</h2>
+    <p >Les plus belle œuvres de Shigeru Ban qui ont été réalisé pour des concours. </p>
+    <img 
+    class="img"
+    src="/public/img/Oeuvres/galerie/mini/historical-museum-mini.jpg" alt="pont"
+            @click="imageUrl= 'https://picsum.photos/id/56/400/300'"
+            >
+    <img 
+    class="img"
+    src="/img/miniature/NEIGE-mini.jpg" alt="gare"
+            @click="imageUrl= 'img/gformat/neige_max.jpg'">
+    <img 
+    class="img"
+    src="/img/miniature/coucher-de-soleil-mini.jpg" alt="gare"
+            @click="imageUrl= 'img/gformat/coucher-de-soleil.jpg'">
+    <img
+    class="img"
+    src="/img/miniature/FORET-mini.jpg" alt="gare"
+            @click="imageUrl= 'img/gformat/foret-maxi.jpg'">
+    <img
+    class="img"
+    src="/img/miniature/montagne-miniature.jpg" alt="gare"
+            @click="imageUrl= 'img/gformat/montagne-maxi.jpg'">
+    
+    <div class="overlay"
+        x-show="imageUrl"
+        @click="imageUrl=null"
+        @keyup.escape.window="imageUrl = null">
+        <figure>
+            <img :src="imageUrl" alt="image 237... un chiot"></figure>
+    </div>
+
+    </section>
 </main>
     <footer>
         <p>Venez découvrir l’exposition a la fondation cartier et suivre les actus sur nos réseaux.</p>
