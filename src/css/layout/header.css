@@ -5,7 +5,10 @@
 
 .header-titre2{
     color: var(--blanc);
-    text-align: center;;
+    text-align: center;
+    padding: 54px;
+    margin-top: 5px;
+    margin-bottom: 0px;
     
 }
 
@@ -14,6 +17,8 @@
     height: 264px;
     flex-shrink: 0;
     margin: 88px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     
 }
 
@@ -55,4 +60,9 @@
     height: 55px;
     flex-shrink: 0;  
 }
- 
+
+hr{ border: none;
+    border-top: 1px solid var(--blanc); 
+    width: 70%; 
+    margin: auto;
+}
