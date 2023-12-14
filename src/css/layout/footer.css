@@ -1,0 +1,36 @@
+footer{
+    position: relative;
+}
+
+.footer__texte{
+    color: var(--marrons);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px 69px;
+
+}
+.footer__facebook{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-bottom: 49px;
+
+}
+
+.footer__instagram{
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.footer__logo{
+    position: absolute;
+    margin-right: 13px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+    
+}
