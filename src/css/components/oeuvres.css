@@ -1,0 +1,93 @@
+.Oeuvres {
+    text-align: center;
+}
+
+.flèche {
+    position: relative;
+}
+.arrow {
+    position: absolute;
+    left: -8PX;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid var(--blanc); 
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 20px; 
+    width: 3px; 
+    background-color: var(--blanc); 
+}
+
+.Oeuvres__titre{
+    color: var(--blanc);
+    margin-bottom: 10px;
+    width: 222px;
+    height: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    font-variant: small-caps;    
+}
+
+.Oeuvres__texte{
+    color: var(--blanc);
+    text-align: center;
+    padding: 10px;
+    width: 328px;
+    height: 46px;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%; /* 17.6px */
+    margin-bottom: 5px;
+    display:inline; 
+}
+
+.Oeuvres__dates{
+    color: var(--blanc);
+    width: 62px;
+    height: 22px;
+    flex-shrink: 0;
+    padding: 30px;
+    margin-bottom: 0px;
+    
+}
+
+.Oeuvres__dates::before {
+    content: "- ";
+}
+
+.Oeuvres__img{
+    width: 305px;
+    height: 193px;
+    flex-shrink: 0;
+    padding-left: 64px;
+    margin-top: 1px;
+    display: block; 
+    margin: Opx; 
+}
+
+.Oeuvres__nom{
+    color: var(--blanc);
+    font-size: var(--intertitre);
+    font-family: Times New Roman;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    font-variant: small-caps;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.Oeuvres__nom_bis{
+    padding: 80px;
+
+}
+
