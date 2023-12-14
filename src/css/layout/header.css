@@ -2,3 +2,20 @@
     background-color: var(--marrons);
     padding: 16px;
 }
+
+.header-titre2{
+    color: var(--blanc);
+    text-align: center;;
+    
+}
+
+.header-img{
+    width: 198px;
+    height: 264px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.header-intertitre{
+    color: var(--blanc);
+}
