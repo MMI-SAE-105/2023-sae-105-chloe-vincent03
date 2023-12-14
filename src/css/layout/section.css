@@ -6,3 +6,10 @@
     align-items: center;
 }
 
+.section__marrons{
+    background-color: var(--marrons);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

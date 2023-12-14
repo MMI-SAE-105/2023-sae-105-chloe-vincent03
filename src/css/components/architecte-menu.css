@@ -1,0 +1,24 @@
+.architecte-intertitre{
+    color: var(--blanc);
+    margin-top: 2px;
+    margin-bottom: 21px;
+}
+.architecte-img{
+    width: 323px;
+    height: 206px;
+    flex-shrink: 0;
+}
+
+.Btn-architecte{
+    color: var(--blanc);
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    font-variant: small-caps;
+    text-decoration-line: underline;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
