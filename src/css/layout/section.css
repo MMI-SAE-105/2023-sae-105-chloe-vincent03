@@ -1,0 +1,7 @@
+.section{
+    background-color: var(--blanc);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

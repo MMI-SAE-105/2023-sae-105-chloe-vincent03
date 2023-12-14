@@ -13,3 +13,8 @@
 
 /* Layout */
 @import "layout/header.css";
+@import "layout/section.css";
+
+
+/* Components */
+@import "components/section1.css";

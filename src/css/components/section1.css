@@ -1,0 +1,45 @@
+.titre2_marrons {
+  color: var(--marrons);
+  margin-top: 31px;
+  margin-bottom: 30px;
+}
+
+
+.img-section1 {
+  width: 282px;
+  height: 188px;
+  flex-shrink: 0;
+  margin: 46px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.texte-marrons {
+  color: var(--marrons);
+  margin-top: 15px;
+  margin-bottom: 0px;
+
+}
+
+.intertitre-marrons{
+  color: var(--marrons);
+  margin-top: 45px;
+  margin-bottom: 5px;
+
+}
+
+.Btn-infos {
+    width: 185px;
+    height: 23px;
+    color: var(--Marrons, #B18544);
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: var(--intertitre);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    font-variant: small-caps;
+    text-decoration-line: underline;
+    margin-top: 20px;
+
+}
