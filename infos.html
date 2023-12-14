@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'art de Shigeru Ban</title>
     <link rel="stylesheet" href="src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,17 +28,17 @@
       ouvert : 1,
      }">
     <ul role="tablist">
-      <li role="tab" >lieu</li>
-      <li role="tab" > Horaires</li>
-      <li role="tab" >Tarifs</li>
+      <li role="tab"  @click="ouvert=1" >lieu</li>
+      <li role="tab"  @click="ouvert=2" > Horaires</li>
+      <li role="tab"  @click="ouvert=3" >Tarifs</li>
     </ul>
     <div>
-        <div role="tabpanel" >
+        <div role="tabpanel" x-bind:class="{actif: ouvert === 1}" >
           <h1>Le Lieu</h1>
           <a href="#"><img src="/public/img/infos.webp" alt="photo montrant le lieu sur une carte"></a>
           <p>Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
         </div>
-        <div role="tabpanel" >
+        <div role="tabpanel" x-bind:class="{actif: ouvert === 2}">
           <h1>Les Horaires</h1>
           <p>Lundi : 11:00-20:00
             Mardi : 11:00-22:00
@@ -48,7 +49,7 @@
             Dimanche : 11:00-20:00
             La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
         </div>
-        <div role="tabpanel" >
+        <div role="tabpanel" x-bind:class="{actif: ouvert === 3}" >
           <h1>Les Tarifs</h1>
           <p>Plein tarif -11€
             Tarif réduit -7,50€
