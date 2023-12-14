@@ -1,0 +1,23 @@
+.Batiment__Titre{
+    color: var(--Marrons, #B18544);
+    padding: 44px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Batiment__img{
+    width: 340px;
+    height: 193px;
+    flex-shrink: 0;
+    display: block; 
+    margin: auto; 
+
+}
+
+.Batiment_texte{
+    padding: 19px;
+}
+
+.Batiment__intertitre{
+    color: var(--Marrons);
+}
