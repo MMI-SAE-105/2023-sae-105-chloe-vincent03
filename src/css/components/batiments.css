@@ -19,5 +19,17 @@
 }
 
 .Batiment__intertitre{
-    color: var(--Marrons);
+    color: var(--marrons);
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    font-variant: small-caps;
+}
+
+.Batiment__retour{
+    color: var(--blanc);
+    font-size: var(--intertitre);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
