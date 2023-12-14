@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +7,61 @@
     <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/index.html">
-            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban">
+            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban" class="header-logo">
         </a>
-        <button>
-            <span></span>
-          </button>
-          <ul >
-            <li><a href="/infos.html" >Infos</a></li>
-            <li><a href="/billetterie.html" >Billetterie</a></li>
-            <li><a href="/shigeru-Ban.html" >Shigeru Ban</a></li>
-            <li><a href="/Oeuvres.html" >Oeuvres</a></li>
-          </ul>
+        <div class="dropdown"> 
+            <button class="dropbtn">
+                <img src="/public/icon/menu-blanc.svg" alt="Menu">
+            </button>
+            <nav class="dropdown-content">
+                <ul class="menu">
+                    <li><a href="/infos.html" class="menu_texte">Infos</a></li>
+                    <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
+                    <li><a href="/shigeru-Ban.html" class="menu_texte" >Shigeru Ban</a></li>
+                    <li><a href="/Oeuvres.html" class="menu_texte">Oeuvres</a></li>
+                </ul>
+                <a href="#menu">
+                    <img src="/public/icon/croix-menu-marron.svg" alt="croix-menu-marron" class="close">
+                </a>
+            </nav>
+        </div>
     </header>
 <main>
-    <section>
-        <h2>Khumjung secondary school </h2>
+    <section class="section">
+        <h2 class="Batiment__Titre"> <strong>Khumjung secondary school </strong></h2>
         <article>
-            <img src="/public/img/nepal/nepal1.webp" alt="photo d'inoguration de l'école au népal">
-            <p>photo d'inoguration de l'école au népal</p>
-            <p>Située à 3 790 m d'altitude au Népal, l'école de Khumjung a été construite pour la première fois par le premier alpiniste du mont Everest, Sir Edmund Hillary, en 1961.</p>
+            <img class="Batiment__img"  class="Batiment__img" src="/public/img/nepal/nepal1.webp" alt="image de l'inoguration de l'école">
+            <p class="légende">image de l'inoguration de l'école</p>
+            <p class="Batiment_texte">Située à 3 790 m d'altitude au Népal, l'école de Khumjung a été construite pour la première fois par le premier alpiniste du mont Everest, Sir Edmund Hillary, en 1961.</p>
         </article>
         <article>
-            <img src="/public/img/nepal/nepal2.webp" alt="Vue intérieur de l'école">
-            <p>Vue intérieur de l'école</p>
-            <p>Le tremblement de terre d'avril 2015 a également laissé l'école de Khumjung dans un environnement dangereux pour les 300 étudiants. 
+            <img class="Batiment__img" src="/public/img/nepal/nepal2.webp" alt="image de l'intérieur de l'école">
+            <p class="légende">image de l'intérieur de l'école</p>
+            <p  class="Batiment_texte">Le tremblement de terre d'avril 2015 a également laissé l'école de Khumjung dans un environnement dangereux pour les 300 étudiants. <br>
                 L’université Doshisha Le Club Alpin a lancé un projet de remplacement d'un bâtiment de classe.</p>
         </article>
         <article>
-            <img src="/public/img/nepal/nepal3.webp" alt="Vue extérieur de l'école">
-            <p>Vue extérieur de l'école</p>
-            <p>Les murs en pierre sont couramment observés dans toute la région. Pour renforcer les murs afin qu'ils deviennent résistants aux tremblements de terre, l’architecte et son équipe à conçue une unité murale dans laquelle la charpente en bois fait office de structure principale et les pierres trouvées localement sont empilées pour fournir une clôture. Pour garantir la sécurité, l’architecte et son équipe à effectué des tests structurels de cette charpente en bois au Japon.</p>
-            <img src="/public/img/nepal/nepal4.webp" alt="Vue globale éxterieur de l'école">
-            <p>Vue globale éxterieur de l'école</p>
+            <img class="Batiment__img" src="/public/img/nepal/nepal3.webp" alt="Vue extérieur de l'école">
+            <p class="légende">Vue extérieur de l'école</p>
         </article>
-    </section>
-    <section>
-        <h3>Retour vers les Oeuvres </h3>
+        <h3 class="Batiment__intertitre">Une fabrication hors norme </h3>
+        <article>
+            <p class="Batiment_texte">Les murs en pierre sont couramment observés dans toute la région. Pour renforcer les murs afin qu'ils deviennent résistants aux tremblements de terre, l’architecte et son équipe à conçue une unité murale dans laquelle la charpente en bois fait office de structure principale et les pierres trouvées localement sont empilées pour fournir une clôture. Pour garantir la sécurité, l’architecte et son équipe à effectué des tests structurels de cette charpente en bois au Japon.</p>
+            <img class="Batiment__img" src="/public/img/nepal/nepal4.webp" alt="Vue plus global de l'environnement extérieur de l'école">
+            <p class="légende">Vue plus global de l'environnement extérieur de l'école</p>
+        </article>
+    </section> 
+    <section class="section__marrons">
+        <a href="/Oeuvres.html" class="Batiment__retour">Retour vers les Oeuvres </a>
     </section> 
 </main> 
-    <footer>
-        <p>Venez découvrir l’exposition a la fondation cartier et suivre les actus sur nos réseaux.</p>
-        <a href="https://www.facebook.com/FondationCartier/?locale=fr_FR"><img src="/public/icon/facebook_black_logo_icon_147136.svg" alt="logo facebook"></a>
-        <a href="https://www.instagram.com/fondationcartier/?hl=fr"><img src="/public/icon/instagram_black_logo_icon_147122.svg" alt="logo instagram"></a>
-        <a href="/index.html"><img src="/public/icon/LOGO.svg" alt="Logo exposition Shigeru Ban"></a>
-    </footer>
+<footer class="footer">
+    <p class="footer__texte">Venez découvrir l’exposition a la fondation cartier et suivre les actus sur nos réseaux.</p>
+    <a href="https://www.facebook.com/FondationCartier/?locale=fr_FR" class="footer__facebook"><img src="/public/icon/facebook_black_logo_icon_147136.svg" alt="logo facebook"></a>
+    <a href="https://www.instagram.com/fondationcartier/?hl=fr" class="footer__instagram"><img src="/public/icon/instagram_black_logo_icon_147122.svg" alt="logo instagram"></a>
+    <a href="/index.html" class="footer__logo"><img src="/public/icon/logo-footer.svg" alt="Logo exposition Shigeru Ban"></a>
+</footer>
 </body>
 </html>
