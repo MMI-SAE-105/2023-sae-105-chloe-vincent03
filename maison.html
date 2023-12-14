@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +7,54 @@
     <link rel="stylesheet" href="src/css/style.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/index.html">
-            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban">
+            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban" class="header-logo">
         </a>
-        <button>
-            <span></span>
-          </button>
-          <ul >
-            <li><a href="/infos.html" >Infos</a></li>
-            <li><a href="/billetterie.html" >Billetterie</a></li>
-            <li><a href="/shigeru-Ban.html" >Shigeru Ban</a></li>
-            <li><a href="/Oeuvres.html" >Oeuvres</a></li>
-          </ul>
+        <div class="dropdown"> 
+            <button class="dropbtn">
+                <img src="/public/icon/menu-blanc.svg" alt="Menu">
+            </button>
+            <nav class="dropdown-content">
+                <ul class="menu">
+                    <li><a href="/infos.html" class="menu_texte">Infos</a></li>
+                    <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
+                    <li><a href="/shigeru-Ban.html" class="menu_texte" >Shigeru Ban</a></li>
+                    <li><a href="/Oeuvres.html" class="menu_texte">Oeuvres</a></li>
+                </ul>
+                <a href="#menu">
+                    <img src="/public/icon/croix-menu-marron.svg" alt="croix-menu-marron" class="close">
+                </a>
+            </nav>
+        </div>
     </header>
+<main>
+    <section class="section">
+        <h2 class="Batiment__Titre"> <strong>Crescent House</strong></h2>
+        <article>
+            <img class="Batiment__img"  class="Batiment__img" src="/public/img/maison/maison.webp" alt="Vue extérieur de la Crescent House">
+            <p class="légende">Vue extérieur de la Crescent House</p>
+            <p class="Batiment_texte">Ce site est situé sur le versant nord d'un quartier de villas au sud de Hakone. Le paysage au nord offre une vue imprenable sur le mont Fuji par beau temps, sans aucune autre maison en périphérie.  </p>
+        </article>
+        <article>
+            <img class="Batiment__img" src="/public/img/maison/maison2.webp" alt="image vue d'en bas de la maison">
+            <p class="légende">image vue d'en bas de la maison</p>
+            <p  class="Batiment_texte">Par contre, avec les maisons de tous les autres côtés, on est ramené à la réalité. Afin de bloquer les lignes de site de tous les côtés, l'idée d'un plan en forme de croissant correspondant au site et s'ouvrant vers le nord a été créée. La section transversale ressemble à la lettre « C » (ou plutôt à la lettre « U » sur le côté).</p>
+        </article>
+        <article>
+            <img class="Batiment__img" src="/public/img/maison/maison2.webp" alt="image de l'architecture intérieur">
+            <p class="légende">image de l'architecture intérieur</p>
+        </article>
+    </section> 
+    <section class="section__marrons">
+        <a href="/Oeuvres.html" class="Batiment__retour">Retour vers les Oeuvres </a>
+    </section> 
+</main> 
+<footer class="footer">
+    <p class="footer__texte">Venez découvrir l’exposition a la fondation cartier et suivre les actus sur nos réseaux.</p>
+    <a href="https://www.facebook.com/FondationCartier/?locale=fr_FR" class="footer__facebook"><img src="/public/icon/facebook_black_logo_icon_147136.svg" alt="logo facebook"></a>
+    <a href="https://www.instagram.com/fondationcartier/?hl=fr" class="footer__instagram"><img src="/public/icon/instagram_black_logo_icon_147122.svg" alt="logo instagram"></a>
+    <a href="/index.html" class="footer__logo"><img src="/public/icon/logo-footer.svg" alt="Logo exposition Shigeru Ban"></a>
+</footer>
 </body>
 </html>
