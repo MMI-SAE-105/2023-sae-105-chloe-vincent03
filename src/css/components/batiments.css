@@ -1,8 +1,8 @@
 .Batiment__Titre{
     color: var(--Marrons, #B18544);
-    padding: 44px;
+    padding: 15px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-family: 'Times New Roman', Times, serif;
     font-size: var(--titre-2);
     text-align: center;
