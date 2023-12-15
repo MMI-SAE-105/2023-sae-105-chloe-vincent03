@@ -10,22 +10,29 @@
     width: 247px;
     height: 40px;
     margin-bottom: 52px;
-}
-
-.menu{
-    list-style-type: none;
-    padding-left: 67px;
-    margin-top: 107px; /* Ajoutez cette ligne */
-}
-
-.menu a {
     text-decoration: none;
-    padding: 10px 0px;
+    
 }
 
-.menu li {
-    margin: 52px 0; /* Ajoute une marge en haut et en bas de chaque élément de liste */
-}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: grid;
+    place-content: center;
+
+  }
+  .header_menuBtn {
+    position: relative;
+    z-index: 10;
+  }
+  .noscroll,
+  .noscroll body {
+    overflow: hidden;
+  }
 
 .logo_menu{
     width: 46px;
@@ -35,3 +42,4 @@
     top: 10px;
     left: 10px;  
 }
+
