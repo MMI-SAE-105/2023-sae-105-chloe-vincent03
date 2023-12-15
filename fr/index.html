@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'art de Shigeru Ban</title>
+    <link rel="stylesheet" href="../src/css/style.css" />
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="/index.html">
+            <img src="/public/icon/LOGO.svg" alt="Logo Shigeru Ban" class="header-logo">
+        </a>
+        <a class="dropbtn">
+            <img src="/public/icon/menu-blanc.svg" alt="Menu" 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+        >
+    </a>
+        <nav 
+          id="mainNav" 
+          x-show="menuIsOpen" 
+          x-transition.duration.500ms
+          class="menu"
+        >
+
+        <a href="/index.html"  >
+            <img src="/public/icon/logo-footer.svg" alt="Logo Shigeru Ban" class="logo-menu">
+        </a>
+
+        <img src="/public/icon/croix-menu-marron.svg" alt="Close menu" 
+        @click="menuIsOpen = false"
+        class="header_menuBtn"
+    >
+          <ul class="menu-list">
+            <li><a href="/infos.html" class="menu_texte">Infos</a></li>
+            <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
+            <li><a href="/shigeru-Ban.html" class="menu_texte" >Shigeru Ban</a></li>
+            <li><a href="/Oeuvres.html" class="menu_texte">Oeuvres</a></li>
+          </ul>
+        </nav>
+        <h1> Expositions </h1>
+        <hr>
+        <h2 class="header-titre2"><strong> L'art de Shigeru Ban</strong></h2>
+        <img src="/public/img/accueil/accueil-1.webp" alt="photo de Shigeru Ban" class="header-img">
+        <h3 class="header-intertitre">13 avril au 23 juin 2024</h3>
+    </header>
+    <main>
+    <section class="section">
+        <h2 class="titre2_marrons">Dans un lieu d’exception </h2>
+        <img src="/public/img/accueil/accueil-2.webp" alt="Fondation Cartier" class="img-section1">
+        <p class="texte-marrons">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <h3 class="intertitre-marrons"> Du 13 avril au 23 juin 2024</h3>
+        <a href="/infos.html" class="Btn-infos">Tout les jours</a> 
+    </section>
+    <section class="section section__marrons">
+        <h3 class="architecte-intertitre">Pour présenter un Architecte mondialement connu</h3>
+        <img src="/public/img/accueil/accueil-3.webp" alt="Image de Shigeru Ban" class="architecte-img">
+        <a href="/shigeru-Ban.html" class="Btn-architecte">Shigeru Ban</a>        
+    </section>
+    <section>
+        <article>
+            <h3 class="intertitre-carrousel">Venez découvrir ces œuvres </h3>
+            <article>
+                <p class="texte-carrousel"> Un petit avant goût de ces créations</p>
+            </article>
+            <div class="carrousel"  x-data="{
+                hrefCourant: '#ecran-1',
+            }">
+                <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+                @click="$refs.parent.scrollLeft -= $refs.parent.offsetWidth"
+                >
+                    &lt;
+                </button>
+                <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+                    @click="$refs.parent.scrollLeft += $refs.parent.offsetWidth"
+                >   
+                    ></button>
+                <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="
+                hrefCourant = '#'+
+                                [...$refs.parent.children]
+                                .find(e=>e.getBoundingClientRect(). x>= 0)
+                                .id
+                                                "
+                >
+                    <div class="carrousel_ecran" >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres5.webp" alt="maison">
+                            <figcaption class="nom-carrousel">Crescent House</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran" >
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres4.webp" alt="centre Ponpidou Metz">
+                            <figcaption class="nom-carrousel"> Centre Ponpidou Metz</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres1.webp" alt="Cardboard Cathedral">
+                            <figcaption class="nom-carrousel">Cardboard Cathedral</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="public/img/Oeuvres/oeuvres7.webp" alt="Khumjung secondary school ">
+                            <figcaption class="nom-carrousel">Khumjung secondary school </figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres8.webp" alt="Shonai hotel Suiden terrasse spa">
+                            <figcaption class="nom-carrousel">Shonai hotel Suiden terrasse spa</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres6.webp" alt="ZEN Wellness SEINEI">
+                            <figcaption class="nom-carrousel">ZEN Wellness SEINEI</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres2.webp" alt="Temporary housing in Marrakesh">
+                            <figcaption class="nom-carrousel">Temporary housing in Marrakesh</figcaption>
+                        </figure>
+                    </div>
+                    <div class="carrousel_ecran">
+                        <figure>
+                            <img src="/public/img/Oeuvres/oeuvres3.webp" alt="Simose">
+                            <figcaption class="nom-carrousel">Simose</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </article>
+        </section>
+    <section class="section" >
+        <article class="billetterie-acceuil">
+            <h3 class="billetterie__titre" >Vous voulez en savoir plus sur comment cet arcitecte révolutionne le monde ? </h3>
+            <p class="billetterie__texte">L’exposition est ouverte tout le jours du 13 Avril au 23 Juin 2024</p>
+            <button  href="/billetterie.html" class="Btn-billetterie"> BILLETTERIE </button>
+            <br>
+            <cite class="citation">Cette exposition sur Shigeru Ban offre une plongée unique dans l'innovation architecturale et la durabilité. Découvrez comment chaque structure raconte une histoire captivante où créativité et responsabilité environnementale convergent.</cite>
+        </article>
+    </section>
+    <section class="section__marrons">
+        <h2 class="contact__Titre">Contactez Nous</h2>
+        <p class="contact__texte"> Vous pouvez nous contacter si vous avez besoin d'aide ou de renseignements.</p>
+        <form action="#">
+            <div>
+              <label for="Prénom" class="contact__formulaire">Prénom</label>
+              <input type="text" name="Prénom" id="Prénom">
+            </div>
+            <div>
+              <label for="Nom" class="contact__formulaire" >Nom</label>
+              <input type="text" name="Nom" id="Nom">
+            </div>
+            <div>
+              <label for="message" class="contact__formulaire">Message</label>
+              <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="contact__Btn">Envoyer</button>
+          </form>
+    </section>
+</main>
+    <footer class="footer">
+        <p class="footer__texte">Venez découvrir l’exposition a la fondation cartier et suivre les actus sur nos réseaux.</p>
+        <a href="https://www.facebook.com/FondationCartier/?locale=fr_FR" class="footer__facebook"><img src="/public/icon/facebook_black_logo_icon_147136.svg" alt="logo facebook"></a>
+        <a href="https://www.instagram.com/fondationcartier/?hl=fr" class="footer__instagram"><img src="/public/icon/instagram_black_logo_icon_147122.svg" alt="logo instagram"></a>
+        <a href="/index.html" class="footer__logo"><img src="/public/icon/logo-footer.svg" alt="Logo exposition Shigeru Ban"></a>
+    </footer>
+</body>
+</html>
