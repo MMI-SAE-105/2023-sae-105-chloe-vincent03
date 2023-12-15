@@ -1,6 +1,6 @@
 :root{
 /* Color styles */
---marrons: rgb(212, 169, 103);
+--marrons: rgba(177, 133, 68, 1);
 --blanc: rgba(255, 255, 255, 1);
 --noir: rgba(0, 0, 0, 1);
 
