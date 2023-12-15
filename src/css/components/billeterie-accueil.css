@@ -20,7 +20,7 @@
     font-variant: small-caps;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 30px;
     background-color: var(--marrons);
@@ -33,7 +33,7 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     width: 161px;
-    height: 40px;
+    height: 30px;
     flex-shrink: 0;
     text-decoration: underline;
    
