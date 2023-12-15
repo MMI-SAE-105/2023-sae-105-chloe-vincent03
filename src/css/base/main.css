@@ -63,3 +63,12 @@ strong{
     line-height: 110%; /* 44px */
     font-variant: small-caps;
 }
+
+.redirection{
+    color: var(--blanc);
+    font-size: var(--texte);
+    margin-bottom: 10px;
+    background-color: var(--marrons);
+    padding: 10px;
+    display: flex;
+}
