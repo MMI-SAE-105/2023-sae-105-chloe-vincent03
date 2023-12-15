@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,9 +22,18 @@
         <nav 
           id="mainNav" 
           x-show="menuIsOpen" 
-          x-transition.duration.800ms
+          x-transition.duration.500ms
           class="menu"
         >
+
+        <a href="/index.html"  >
+            <img src="/public/icon/logo-footer.svg" alt="Logo Shigeru Ban" class="logo-menu">
+        </a>
+
+        <img src="/public/icon/croix-menu-marron.svg" alt="Close menu" 
+        @click="menuIsOpen = false"
+        class="header_menuBtn"
+    >
           <ul class="menu-list">
             <li><a href="/infos.html" class="menu_texte">Infos</a></li>
             <li><a href="/billetterie.html" class="menu_texte">Billetterie</a></li>
